@@ -7,16 +7,6 @@
 require_once 'includes/config.php';
 require_once 'includes/login_session.php';
 
-/* if(
-    $logged_in 
-    || $_SERVER["REQUEST_METHOD"] !== "POST" 
-    || !isset( $_POST["login_token"]) 
-    || $_POST["login_token"] !== $login_token
-){
-    header("Location: herosheet.php");
-    exit();
-};
- */
 $user = $_POST['user'] ?? null;
 $password = $_POST['password'] ?? null;
 $_SESSION["login_error"] = null;

@@ -54,6 +54,7 @@ div .hero_name{
     width: 100px
 }
 
+
 #special,
 #inv,
 #stat,
@@ -71,6 +72,8 @@ div .hero_name{
     border: 2px solid white;
 }
 
+#home,
+#hero,
 #load,
 #submit,
 #reset{
@@ -79,23 +82,19 @@ div .hero_name{
     color: white;
     font-size: 30px;
     transition: background-color 0.5s, color 0.5s;
+    text-decoration: none;
 }
 
 #submit:hover{
     background-color:gold;
     transition: 0.7s;
     color:rgba(255, 255, 255, 0.986);
-    box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
-	transform: scale(1);
-	animation: save_pulse 2s infinite;
 }
 
 #reset:hover{
     background-color:crimson;
     transition: 0.7s;
     color:rgba(255, 255, 255, 0.986);
-    transform: scale(1);
-	animation: reset_pulse 2s infinite;
 }
 
 
@@ -103,9 +102,20 @@ div .hero_name{
     background-color:rgb(20, 220, 47);
     transition: 0.7s;
     color:rgb(255, 255, 255);
-    transform: scale(1);
-	animation: load_pulse 2s infinite;
 }
+
+#hero:hover{
+    background-color:rgb(20, 220, 47);
+    transition: 0.7s;
+    color:rgb(255, 255, 255);
+}
+
+#home:hover{
+    background-color:rgb(20, 220, 47);
+    transition: 0.7s;
+    color:rgb(255, 255, 255);
+}
+
 
 .pass{
     color: white;
@@ -153,7 +163,7 @@ div .hero_name{
     margin: auto;
     white-space: nowrap;
     display: flex;
-    animation: error_pulse 1s infinite;
+    animation: error_pulse 2s infinite;
     align-items: center;
     justify-content: center;
 }

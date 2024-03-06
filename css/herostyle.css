@@ -1,0 +1,135 @@
+*{
+    font-family: monospace;
+}
+
+body {
+    background-color: rgb(24, 24, 24);
+    background-image: url(../images/twall.png);
+  }
+
+h1{
+    color:rgb(255, 255, 255);
+    align-items: center;
+    text-align: center;
+    font-size: 100px;
+    margin: auto;
+}
+th{
+    font-size: 30px;
+    color: white;
+    white-space: nowrap;
+    padding: 10px;
+}
+
+div .hero_backpack,
+div .hero_abilities,
+div .hero_stats,
+div .hero_inv,
+div .hero_name{
+    font-size: 30px;
+    color: rgb(20, 220, 47);
+    white-space: nowrap;
+    padding: 10px;
+}
+div .hero_backpack:hover,
+div .hero_abilities:hover,
+div .hero_stats:hover,
+div .hero_inv:hover,
+div .hero_name:hover{
+    font-size: 30px;
+    color: rgb(20, 173, 220);;
+    white-space: nowrap;
+    padding: 10px;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.health input,
+.stats input{
+    width: 65px;
+    font-size: 40px;
+}
+
+.abilities textarea,
+.backpack input,
+.inventory input{
+    width: 200px;
+    font-size: 25px;
+}
+
+div .hero_name{
+    margin-top: 20px;
+}
+
+#money_pouch{
+    width: 100px
+}
+
+#special,
+#inv,
+#stat,
+#pack{
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    padding-left: 20px;
+    font-weight: 600;
+}
+
+#home,
+#hero{
+    background-color: transparent;
+    border: 2px solid rgb(255, 255, 255);
+    color: white;
+    font-size: 30px;
+    transition: background-color 0.5s, color 0.5s;
+    text-decoration: none;
+}
+
+#home:hover{
+    background-color:rgb(20, 220, 47);
+    transition: 0.7s;
+    color:rgb(255, 255, 255);
+}
+
+.backpack,
+.modifiers,
+.stats,
+.inventory,
+.character{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(15, 15, 15);
+    text-align: left;
+    border: 2px solid white;
+    margin: 10px
+}
+
+label{
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#logout{
+    background-color: transparent;
+    border: 2px solid rgb(255, 255, 255);
+    color: white;
+    font-size: 30px;
+    transition: background-color 0.5s, color 0.5s;
+    text-decoration: none;
+
+}
+
+#logout:hover{
+    background-color:rgb(20, 173, 220);
+    transition: 0.7s;
+    color:rgb(255, 255, 255);
+}
+
+
+
+
