@@ -29,7 +29,7 @@ th{
 
 .health input,
 .stats input{
-    width: 65px;
+    width: 70px;
     font-size: 40px;
 }
 
@@ -40,9 +40,12 @@ th{
 }
 
 .abilities textarea,
-.backpack input,
-.inventory input{
+.backpack input{
     width: 200px;
+    font-size: 25px;
+}
+
+.inventory input{
     font-size: 25px;
 }
 

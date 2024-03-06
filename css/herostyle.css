@@ -4,7 +4,9 @@
 
 body {
     background-color: rgb(24, 24, 24);
-    background-image: url(../images/twall.png);
+    background-image: url(../images/hall.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;
   }
 
 h1{
@@ -26,23 +28,12 @@ div .hero_abilities,
 div .hero_stats,
 div .hero_inv,
 div .hero_name{
-    font-size: 30px;
-    color: rgb(20, 220, 47);
-    white-space: nowrap;
-    padding: 10px;
-}
-div .hero_backpack:hover,
-div .hero_abilities:hover,
-div .hero_stats:hover,
-div .hero_inv:hover,
-div .hero_name:hover{
-    font-size: 30px;
-    color: rgb(20, 173, 220);;
-    white-space: nowrap;
-    padding: 10px;
     font-size: 50px;
-    font-weight: bold;
+    color: gold;
+    white-space: nowrap;
+    padding: 10px;
 }
+
 
 .health input,
 .stats input{
@@ -99,7 +90,7 @@ div .hero_name{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(15, 15, 15);
+    background-color: rgba(15, 15, 15, 0.37);
     text-align: left;
     border: 2px solid white;
     margin: 10px
