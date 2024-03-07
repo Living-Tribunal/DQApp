@@ -5,35 +5,41 @@
 body {
     background-color: rgb(24, 24, 24);
     background-image: url(../images/hall.jpg);
-    background-repeat:no-repeat;
     background-size: cover;
+    width: 100%;
+    height: auto;
   }
 
-h1{
+  h1{
     color:rgb(255, 255, 255);
     align-items: center;
     text-align: center;
     font-size: 100px;
     margin: auto;
+    margin-top:10px;
+    text-shadow: 3px 3px 6px rgb(0, 0, 0);
 }
+
 th{
-    font-size: 30px;
+    font-size: 40px;
     color: white;
-    white-space: nowrap;
-    padding: 10px;
 }
 
-div .hero_backpack,
-div .hero_abilities,
-div .hero_stats,
-div .hero_inv,
-div .hero_name{
-    font-size: 50px;
-    color: gold;
-    white-space: nowrap;
-    padding: 10px;
+th,
+td{
+    padding-left: 2em;
+    padding-right: 2em;
+    vertical-align: middle;
 }
 
+tr{
+    row-gap: 100px;
+    background-color: rgba(100, 100, 100, 0.452);
+}
+
+th{
+    background-color: rgba(37, 37, 37, 0.753);
+}
 
 .health input,
 .stats input{
@@ -54,16 +60,6 @@ div .hero_name{
 
 #money_pouch{
     width: 100px
-}
-
-#special,
-#inv,
-#stat,
-#pack{
-    color: rgb(255, 255, 255);
-    font-size: 50px;
-    padding-left: 20px;
-    font-weight: 600;
 }
 
 #home,
@@ -90,19 +86,41 @@ div .hero_name{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(15, 15, 15, 0.37);
-    text-align: left;
-    border: 2px solid white;
+    text-align: center;
     margin: 10px
 }
 
 label{
     color: white;
-    font-size: 50px;
+    font-size: 40px;
     font-weight: bold;
-    display: flex;
     align-items: center;
     justify-content: center;
+    display: flex;
+}
+
+div .hero_backpack,
+div .hero_abilities,
+div .hero_stats,
+div .hero_inv,
+div .hero_name{
+    font-size: 40px;
+    color: gold;
+    white-space: nowrap;
+    padding: 10px;
+    transition: 0.7s;
+}
+
+div .hero_backpack:hover,
+div .hero_abilities:hover,
+div .hero_stats:hover,
+div .hero_inv:hover,
+div .hero_name:hover{
+    transform: scale(1.1);
+    color: gold;
+    white-space: nowrap;
+    padding: 10px;
+    transition: 0.7s;
 }
 
 #logout{
@@ -112,14 +130,15 @@ label{
     font-size: 30px;
     transition: background-color 0.5s, color 0.5s;
     text-decoration: none;
-
 }
 
-#logout:hover{
-    background-color:rgb(20, 173, 220);
-    transition: 0.7s;
-    color:rgb(255, 255, 255);
-}
+  img {
+    margin: auto;
+    padding: 20px;
+    vertical-align: middle;
+    transform: scale(1.15);
+}   
+
 
 
 

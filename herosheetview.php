@@ -75,108 +75,120 @@ $item_four = $row['item_four'];
         <a href="herosheet.php" id="home">Modify Hero</a>
     </div>
     <div class="container">
-    <h1>Destiny Quest Hero Sheet</h1>
-    <label id="character">Character</label>
-    <div class="hero_name">
-        <table class="character">        
-            <tr>
-                <th>Name:</th>
-                <td><?php echo $name ?></td>
-                <th>Path:</th>
-                <td><?php echo $path ?></td>
-                <th>Career:</th>
-                <td><?php echo $career ?></td>
-            </tr>
-        </table>
+        <h1>Destiny Quest Hero Sheet</h1>
+        <div class="hero_name">
+            <table class="character">   
+                <tr>
+                    <label id="character">Character</label>
+                    <th><img src="images/name.png" alt="Name Icon"></th>
+                    <th><img src="images/path.png" alt="Path Icon"></th>
+                    <th><img src="images/career.png" alt="Career Icon"></th>
+                </tr>
+                <tr>
+                    <td><?php echo $name ?></td>
+                    <td><?php echo $path ?></td>
+                    <td><?php echo $career ?></td>
+                </tr>
+            </table>
+        </div>
+        <div class="hero_inv">
+            <table class="inventory">
+                <tr>
+                    <label id="inventory">Inventory</label>
+                    <th><img src="images/cloak.png" alt="Cloak Icon"></th>
+                    <th><img src="images/helmet.png" alt="Head Icon"></th>
+                    <th><img src="images/gloves.png" alt="Gloves Icon"></th>
+                    <th><img src="images/chest.png" alt="Chest Icon"></th>
+                </tr>
+                <tr>   
+                    <td><?php echo $cloak; ?></td>
+                    <td><?php echo $head; ?></td>
+                    <td><?php echo $gloves; ?></td>
+                    <td><?php echo $chest; ?></td>
+                </tr>
+                <tr>
+                    <th><img src="images/sword.png" alt="Sword Icon"></th>
+                    <th><img src="images/shield.png" alt="Shield Icon"></th>
+                    <th><img src="images/talisman.png" alt="Talsiman Icon"></th>
+                    <th><img src="images/boot.png" alt="Boot Icon"></th>
+                </tr>
+                <tr>    
+                    <td><?php echo $main_hand; ?></td>
+                    <td><?php echo $left_hand; ?></td>
+                    <td><?php echo $talisman; ?></td>
+                    <td><?php echo $feet; ?></td>
+                </tr>
+                <tr>
+                    <th><img src="images/pouch.png" alt="Pouch Icon"></th>
+                    <th><img src="images/necklace.png" alt="Necklace Icon"></th>
+                    <th><img src="images/ring.png" alt="Right Ring Icon"></th>
+                    <th><img src="images/ring.png" alt="Left Ring Icon"></th>
+                </tr>
+                <tr>
+                    <td><?php echo $money_pouch; ?></td>
+                    <td><?php echo $necklace; ?></td>
+                    <td><?php echo $left_ring; ?></td>
+                    <td><?php echo $right_ring; ?></td>
+                </tr>
+            </table>
+        </div>
+        <div class="hero_stats">
+            <table class="stats">
+                <tr>
+                    <label id="stats">Stats</label>
+                    <th><img src="images/speed.png" alt="Speed Icon"></th>
+                    <th><img src="images/brawn.png" alt="Brawn Icon"></th>
+                    <th><img src="images/magic.png" alt="Magic Icon"></th>
+                    <th><img src="images/armor.png" alt="Armor Icon"></th>
+                    <th><img src="images/health.png" alt="Health Icon"></th>
+                </tr>
+                <tr>
+                    <td><?php echo $speed; ?></td>
+                    <td><?php echo $brawn; ?></td>
+                    <td><?php echo $magic; ?></td>
+                    <td><?php echo $armor; ?></td>
+                    <td><?php echo $health; ?></td>
+                </tr>
+            </table>
+        </div>
+        <div class="hero_abilities">
+            <table class="modifiers">
+                <tr>
+                    <label id="mod">Modifiers</label>
+                    <th><img src="images/commod.png" alt="Combat Mod Icon"></th>
+                    <th><img src="images/pmod.png" alt="Passive Mod Icon"></th>
+                </tr>
+                <tr>
+                    <td><?php echo $combat_ability; ?></td>
+                    <td><?php echo $passive_ability; ?></td>
+                </tr>
+                <tr>
+                    <th><img src="images/mod.png" alt="Mod Icon"></th>
+                    <th><img src="images/spdmod.png" alt="Speed Mod Icon"></th>
+                </tr>
+                <tr>
+                    <td><?php echo $modifier_ability; ?></td>
+                    <td><?php echo $speed_ability; ?></td>
+                </tr>
+            </table>
+        </div>
+        <div class="hero_backpack">
+            <table class="backpack">
+                <tr>
+                    <label id="backpack">Backpack</label>
+                    <th><img src="images/backpack.png" alt="backpack Icon"></th>
+                    <th><img src="images/backpack.png" alt="backpack Icon"></th>
+                    <th><img src="images/backpack.png" alt="backpack Icon"></th>
+                    <th><img src="images/backpack.png" alt="backpack Icon"></th>
+                </tr>
+                <tr>
+                    <td><?php echo $item_one; ?></td>
+                    <td><?php echo $item_two; ?></td>
+                    <td><?php echo $item_three; ?></td>
+                    <td><?php echo $item_four; ?></td>
+                </tr>
+            </table>
+        </div>
     </div>
-    <label id="character">Inventory</label>
-    <div class="hero_inv">
-        <table class="inventory">
-            <tr>
-                <th>Cloak:</th>
-                <td><?php echo $cloak; ?></td>
-                <th>Head:</th>
-                <td><?php echo $head; ?></td>
-                <th>Gloves:</th>
-                <td><?php echo $gloves; ?></td>
-                <th>Main Hand:</th>
-                <td><?php echo $main_hand; ?></td>
-            </tr>
-            <tr>   
-                <th>Chest:</th>
-                <td><?php echo $chest; ?></td>
-                <th>Left Hand:</th>
-                <td><?php echo $left_hand; ?></td>
-                <th>Talisman:</th>
-                <td><?php echo $talisman; ?></td>
-                <th>Feet:</th>
-                <td><?php echo $feet; ?></td>
-            </tr>
-            <tr>
-                <th>Money Pouch:</th>
-                <td><?php echo $money_pouch; ?></td>
-                <th>Necklace:</th>
-                <td><?php echo $necklace; ?></td>
-                <th>Left Ring:</th>
-                <td><?php echo $left_ring; ?></td>
-                <th>Right Ring:</th>
-                <td><?php echo $right_ring; ?></td>
-            </tr>
-        </table>
-    </div>
-    <label id="character">Stats</label>
-    <div class="hero_stats">
-        <table class="stats">
-            <tr>
-                <th>Speed:</th>
-                <td><?php echo $speed; ?></td>
-                <th>Brawn:</th>
-                <td><?php echo $brawn; ?></td>
-            </tr>
-            <tr>
-                <th>Magic:</th>
-                <td><?php echo $magic; ?></td>
-                <th>Armor:</th>
-                <td><?php echo $armor; ?></td>
-                <th>Health:</th>
-                <td><?php echo $health; ?></td>
-            </tr>
-        </table>
-    </div>
-    <label id="character">Modifiers</label>
-    <div class="hero_abilities">
-        <table class="modifiers">
-            <tr>
-                <th>Combat Ability:</th>
-                <td><?php echo $combat_ability; ?></td>
-                <th>Passive Ability:</th>
-                <td><?php echo $passive_ability; ?></td>
-            </tr>
-            <tr>
-                <th>Modifier Ability:</th>
-                <td><?php echo $modifier_ability; ?></td>
-                <th>Speed Ability:</th>
-                <td><?php echo $speed_ability; ?></td>
-            </tr>
-        </table>
-    </div>
-    <label id="backpack">Backpack</label>
-    <div class="hero_backpack">
-        <table class="backpack">
-            <tr>
-                <th>Item One:</th>
-                <td><?php echo $item_one; ?></td>
-                <th>Item Two:</th>
-                <td><?php echo $item_two; ?></td>
-            </tr>
-            <tr>
-                <th>Item Three:</th>
-                <td><?php echo $item_three; ?></td>
-                <th>Item Four:</th>
-                <td><?php echo $item_four; ?></td>
-            </tr>
-        </table>
-    </div>
-</div>
 </body>
 </html>
