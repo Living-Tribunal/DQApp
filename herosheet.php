@@ -267,12 +267,17 @@ try {
 <head>
 <link rel="stylesheet" href="css/style.css">
 <script src="includes/myFunction.js"></script>
-
 </head>
 <body>
-<div class="home">
-<a href="logout.php" id="logout">Log Out</a>
-</div>
+<div class="hero_button">
+    <table class="button">
+        <tr>
+            <td><button onclick="mySubmitButton()" id="submit" type="submit" value="Save Character">Save Hero</button></td>
+            <td><a href="herosheetview.php" id="hero">Character Sheet</a></td>
+            <td><a href="logout.php" id="logout">Log Out</a></td>
+        </tr>
+    </table>
+        </div>
 <h1>Modify Your Hero</h1>
 <form method="POST">
     <div class="container">
@@ -372,14 +377,6 @@ try {
                     <td><input type="text" id="item3" name="item3" ></td>
                     <th><label for="item4">Item 4:</label></th>
                     <td><input type="text" id="item4" name="item4" ></td>
-                </tr>
-            </table>
-        </div>
-        <div class="hero_button">
-            <table class="button">
-                <tr>
-                    <td><button onclick="mySubmitButton()" id="submit" type="submit" value="Save Character">Save Hero</button></td>
-                    <td><a href="herosheetview.php" id="hero">Character Sheet</a></td>
                 </tr>
             </table>
         </div>
