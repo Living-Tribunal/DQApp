@@ -74,6 +74,13 @@ $item_four = $row['item_four'];
         <a href="logout.php" id="logout">Log Out</a>
         <a href="herosheet.php" id="home">Modify Hero</a>
     </div>
+    <div class="welcome">
+        <?php if(empty($name) && empty($path) && empty($career)): ?>
+            <p class="hello">Welcome!<br> This must be your first time here.<br> 
+            If so head on over to "Modify Hero" <br>and start building your Hero!</p>
+            <script>modify_hero_button_color()</script>
+        <?php endif; ?>
+    </div>
     <div class="container">
         <h1>Destiny Quest Hero Sheet</h1>
         <div class="hero_name">

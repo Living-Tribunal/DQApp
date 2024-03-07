@@ -269,17 +269,28 @@ try {
 <script src="includes/myFunction.js"></script>
 </head>
 <body>
-<div class="hero_button">
-    <table class="button">
-        <tr>
-            <td><button onclick="mySubmitButton()" id="submit" type="submit" value="Save Character">Save Hero</button></td>
-            <td><a href="herosheetview.php" id="hero">Character Sheet</a></td>
-            <td><a href="logout.php" id="logout">Log Out</a></td>
-        </tr>
-    </table>
-        </div>
-<h1>Modify Your Hero</h1>
 <form method="POST">
+    <div class="hero_button">
+        <table class="button">
+            <tr>
+                <td><button onclick="mySubmitButton()" id="submit" type="submit" value="Save Character">Save Hero</button></td>
+                <td><a href="herosheetview.php" id="hero">Character Sheet</a></td>
+                <td><a href="logout.php" id="logout">Log Out</a></td>
+                <div class="welcome">
+                    <?php if(empty($name) && empty($path) && empty($career)): ?>
+                        <p class="hello">Welcome to Your Hero Sheet!<br>
+                        This is your central hub for updating your Hero as you embark on your epic adventure. <br>
+                        Once you're satisfied, don't forget to hit "Save Hero". <br>
+                        To view your character sheet, simply navigate to "Character Sheet". <br>
+                        And when you're ready to take a break, simply click "Logout". <br>
+                        Happy Adventuring!<br></p>
+                        <script>modify_button_color()</script>
+                    <?php endif; ?>
+                </div>
+            </tr>
+        </table>
+    </div>
+<h1>Modify Your Hero</h1>
     <div class="container">
         <div class="hero_name">
             <table class="character">

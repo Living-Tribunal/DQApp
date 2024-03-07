@@ -203,6 +203,11 @@ div .hero_name{
 	animation: logout_pulse 2s infinite;
 }
 
+p{
+    color:white;
+    font-size: 30px;
+}
+
 /* Just wanted to mess with this figured I'd keep it in*/
 /* @keyframes save_pulse {
 	0% {

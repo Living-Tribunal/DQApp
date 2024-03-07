@@ -4,9 +4,7 @@ require_once 'includes/login_session.php';
 
 $login_error = $_SESSION["login_error"] ?? null;
 
-$sql = "SELECT * FROM character";
 ?>
-
 
 <!DOCTYPE html>
 <html>

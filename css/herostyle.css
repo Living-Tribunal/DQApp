@@ -130,6 +130,15 @@ div .hero_name:hover{
     font-size: 30px;
     transition: background-color 0.5s, color 0.5s;
     text-decoration: none;
+
+}
+
+#logout:hover{
+    background-color:rgb(20, 173, 220);
+    transition: 0.7s;
+    color:rgb(255, 255, 255);
+    transform: scale(1);
+	animation: logout_pulse 2s infinite;
 }
 
   img {
@@ -137,7 +146,12 @@ div .hero_name:hover{
     padding: 20px;
     vertical-align: middle;
     transform: scale(1.15);
-}   
+} 
+
+p{
+    color:white;
+    font-size: 30px;
+}
 
 
 
