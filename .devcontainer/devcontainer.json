@@ -1,0 +1,35 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/php
+{
+	"name": "PHP with SQLite",
+	
+	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+	"image": "mcr.microsoft.com/devcontainers/php:0-8.2",
+
+	// Features to add to the dev container. More info: https://containers.dev/features.
+	// "features": {},
+
+	// Configure tool-specific properties.
+	"customizations": {
+		// Configure properties specific to VS Code.
+		"vscode": {
+			"settings": {},
+			"extensions": [
+				"ms-vsliveshare.vsliveshare",
+				"alexcvzz.vscode-sqlite"
+			]
+		}
+	},
+
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	"forwardPorts": [8080],
+
+	"portsAttributes": {
+		"8080": {
+			"label": "php-application"
+		}
+	},
+
+	// Use 'postCreateCommand' to run commands after the container is created.
+	"postCreateCommand": "sudo apache2ctl start && sudo chmod a+x \"$(pwd)\" && sudo rm -rf /var/www/html && sudo ln -s \"$(pwd)\" /var/www/html && sudo apt-get update && sudo apt install sqlite3 -y && sudo mkdir /var/www/html/data && sudo sqlite3 data/app.db \"\" && sudo chmod 666 /var/www/html/data/app.db"
+}
