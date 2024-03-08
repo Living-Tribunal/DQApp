@@ -6,42 +6,42 @@ require_once 'load_character.php';
 
 require_login($logged_in);
 
-$name = '';
-
 try {
     $db = new PDO($dsn);
     $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     
+
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         
-        $name = $_POST['name'];
-        $path = $_POST['path'];
-        $career = $_POST['career'];
-        $cloak = $_POST['cloak'];
-        $head = $_POST['head'];
-        $gloves = $_POST['gloves'];
-        $chest = $_POST['chest'];
-        $main_hand = $_POST['main_hand'];
-        $left_hand = $_POST['left_hand'];
-        $talisman = $_POST['talisman'];
-        $feet = $_POST['feet'];
-        $left_ring = $_POST['left_ring'];
-        $right_ring = $_POST['right_ring'];
-        $necklace = $_POST['necklace'];
-        $money_pouch = $_POST['money_pouch'];
-        $speed = $_POST['speed'];
-        $brawn = $_POST['brawn'];
-        $magic = $_POST['magic'];
-        $armor = $_POST['armor'];
-        $health = $_POST['health'];
-        $speed_ability = $_POST['speed_ability'];
-        $combat_ability = $_POST['combat_ability'];
-        $passive_ability = $_POST['passive_ability'];
-        $mod_ability = $_POST['mod_ability'];
-        $item1 = $_POST['item1'];
-        $item2 = $_POST['item2'];
-        $item3 = $_POST['item3'];
-        $item4 = $_POST['item4'];
+        $name = isset($_POST['name']) ? htmlspecialchars(trim($_POST['name'])) : '';
+        $path = isset($_POST['path']) ? htmlspecialchars(trim($_POST['path'])) : '';
+        $career = isset($_POST['career']) ? htmlspecialchars(trim($_POST['career'])) : '';
+        $cloak = isset($_POST['cloak']) ? htmlspecialchars(trim($_POST['cloak'])) : '';
+        $head = isset($_POST['head']) ? htmlspecialchars(trim($_POST['head'])) : '';
+        $gloves = isset($_POST['gloves']) ? htmlspecialchars(trim($_POST['gloves'])) : '';
+        $chest = isset($_POST['chest']) ? htmlspecialchars(trim($_POST['chest'])) : '';
+        $main_hand = isset($_POST['main_hand']) ? htmlspecialchars(trim($_POST['main_hand'])) : '';
+        $left_hand = isset($_POST['left_hand']) ? htmlspecialchars(trim($_POST['left_hand'])) : '';
+        $talisman = isset($_POST['talisman']) ? htmlspecialchars(trim($_POST['talisman'])) : '';
+        $feet = isset($_POST['feet']) ? htmlspecialchars(trim($_POST['feet'])) : '';
+        $left_ring = isset($_POST['left_ring']) ? htmlspecialchars(trim($_POST['left_ring'])) : '';
+        $right_ring = isset($_POST['right_ring']) ? htmlspecialchars(trim($_POST['right_ring'])) : '';
+        $necklace = isset($_POST['necklace']) ? htmlspecialchars(trim($_POST['necklace'])) : '';
+        $money_pouch = isset($_POST['money_pouch']) ? htmlspecialchars(trim($_POST['money_pouch'])) : '';
+        $speed = isset($_POST['speed']) ? htmlspecialchars(trim($_POST['speed'])) : '';
+        $brawn = isset($_POST['brawn']) ? htmlspecialchars(trim($_POST['brawn'])) : '';
+        $magic = isset($_POST['magic']) ? htmlspecialchars(trim($_POST['magic'])) : '';
+        $armor = isset($_POST['armor']) ? htmlspecialchars(trim($_POST['armor'])) : '';
+        $health = isset($_POST['health']) ? htmlspecialchars(trim($_POST['health'])) : '';
+        $speed_ability = isset($_POST['speed_ability']) ? htmlspecialchars(trim($_POST['speed_ability'])) : '';
+        $combat_ability = isset($_POST['combat_ability']) ? htmlspecialchars(trim($_POST['combat_ability'])) : '';
+        $passive_ability = isset($_POST['passive_ability']) ? htmlspecialchars(trim($_POST['passive_ability'])) : '';
+        $mod_ability = isset($_POST['mod_ability']) ? htmlspecialchars(trim($_POST['mod_ability'])) : '';
+        $item1 = isset($_POST['item1']) ? htmlspecialchars(trim($_POST['item1'])) : '';
+        $item2 = isset($_POST['item2']) ? htmlspecialchars(trim($_POST['item2'])) : '';
+        $item3 = isset($_POST['item3']) ? htmlspecialchars(trim($_POST['item3'])) : '';
+        $item4 = isset($_POST['item4']) ? htmlspecialchars(trim($_POST['item4'])) : '';
+        
         
 
         if (!empty($_POST['name'])) {
@@ -310,7 +310,7 @@ try {
             <table class="character">
                 <tr>
                     <th><label for="name">Name:</label></th>
-                    <td><input type="text" size="50" id="name" value="<?php echo $name ?>" name="name"></td>
+                    <td><input type="text" size="50" id="name" name="name"></td>
                     <th><label for="path">Path:</label></th>
                     <td><input type="text" size="50" id="path" name="path"> </input></td>
                     <th><label for="career">Career:</label></th>
