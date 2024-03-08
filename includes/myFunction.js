@@ -69,18 +69,18 @@ function stat_numbers() {
     money.value = money_input;
   }
 
-function modify_hero_button_color(){
+/* function modify_hero_button_color(){
   const button = document.getElementById("home");
   button.style.backgroundColor = 'rgb(20, 220, 47)';
 }
 
 function modify_button_color(){
-  const save = document.getElementById("submit");
-  const hero = document.getElementById("hero");
-  const logout = document.getElementById("logout");
+  const save = document.getElementById("submit_not_set");
+  const hero = document.getElementById("hero_not_set");
+  const logout = document.getElementById("logout_not_set");
 
-  save.style.backgroundColor = 'rgb(255, 215, 0)';
-  hero.style.backgroundColor = 'rgb(20, 220, 47)';
-  logout.style.backgroundColor = 'rgb(20, 173, 220)';
+  save.style.backgroundColor = 'red';
+  hero.style.backgroundColor = 'red';
+  logout.style.backgroundColor = 'red';
 }
-
+ */

@@ -94,13 +94,6 @@ div .hero_name{
     color:rgba(255, 255, 255, 0.986);
 }
 
-#reset:hover{
-    background-color:crimson;
-    transition: 0.7s;
-    color:rgba(255, 255, 255, 0.986);
-}
-
-
 #load:hover{
     background-color:rgb(20, 220, 47);
     transition: 0.7s;
@@ -208,8 +201,39 @@ p{
     font-size: 30px;
 }
 
-/* Just wanted to mess with this figured I'd keep it in*/
-/* @keyframes save_pulse {
+
+#submit_not_set{
+    background-color: transparent;
+    border: 2px solid rgb(255, 255, 255);
+    color: white;
+    font-size: 30px;
+    transition: background-color 0.5s, color 0.5s;
+    text-decoration: none;
+    animation: save_pulse 2s infinite;
+}
+
+#logout_not_set{
+    background-color: transparent;
+    border: 2px solid rgb(255, 255, 255);
+    color: white;
+    font-size: 30px;
+    transition: background-color 0.5s, color 0.5s;
+    text-decoration: none;
+    animation: logout_pulse 2s infinite;
+}
+
+#hero_not_set{
+    background-color: transparent;
+    border: 2px solid rgb(255, 255, 255);
+    color: white;
+    font-size: 30px;
+    transition: background-color 0.5s, color 0.5s;
+    text-decoration: none;
+    animation: load_pulse 2s infinite;
+}
+
+
+@keyframes save_pulse {
 	0% {
 		background-color: gold;
 	}
@@ -237,20 +261,6 @@ p{
 	}
 }
 
-@keyframes reset_pulse {
-	0% {
-		background-color: crimson;
-	}
-
-	70% {
-		background-color: transparent;
-	}
-
-	100% {
-		background-color: crimson;
-	}
-}
-
 @keyframes logout_pulse {
 	0% {
 		background-color:rgb(20, 173, 220);
@@ -263,7 +273,7 @@ p{
 	100% {
 		background-color:rgb(20, 173, 220);
 	}
-} */
+}
 
 
 

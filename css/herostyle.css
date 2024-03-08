@@ -153,7 +153,29 @@ p{
     font-size: 30px;
 }
 
+#home_not_set{
+    background-color: transparent;
+    border: 2px solid rgb(255, 255, 255);
+    color: white;
+    font-size: 30px;
+    transition: background-color 0.5s, color 0.5s;
+    text-decoration: none;
+    animation: home_pulse 2s infinite;
+}
 
+@keyframes home_pulse {
+	0% {
+		background-color:rgb(20, 220, 47);
+	}
+
+	70% {
+		background-color: transparent;
+	}
+
+	100% {
+		background-color:rgb(20, 220, 47);
+	}
+}
 
 
 

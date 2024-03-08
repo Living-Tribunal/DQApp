@@ -70,12 +70,18 @@ $item_four = $row['item_four'];
 <script src="includes/myFunction.js"></script>
 </head>
 <body id="herosheetview">
+<?php if(isset($name) || isset($path) || isset($career)): ?>
     <div class="home">
         <a href="logout.php" id="logout">Log Out</a>
         <a href="herosheet.php" id="home">Modify Hero</a>
     </div>
+<?php endif; ?> 
     <div class="welcome">
         <?php if(empty($name) && empty($path) && empty($career)): ?>
+            <div class="home">
+                <a href="logout.php" id="logout">Log Out</a>
+                <a href="herosheet.php" id="home_not_set">Modify Hero</a>
+            </div>
             <p class="hello">Welcome!<br> This must be your first time here.<br> 
             If so head on over to "Modify Hero" <br>and start building your Hero!</p>
             <script>modify_hero_button_color()</script>
