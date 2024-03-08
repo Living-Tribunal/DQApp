@@ -6,6 +6,8 @@ require_once 'load_character.php';
 
 require_login($logged_in);
 
+$name = '';
+
 try {
     $db = new PDO($dsn);
     $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
@@ -271,7 +273,7 @@ try {
 <body>
 <form method="POST">
 <?php if(isset($name) && trim($name) !== '' || isset($path) && trim($path) !== '' || isset($career) && trim($career) !== ''): ?>
-    <div class="home">
+<div class="home">
     <div class="hero_button">
         <table class="button">
             <tr>
@@ -308,7 +310,7 @@ try {
             <table class="character">
                 <tr>
                     <th><label for="name">Name:</label></th>
-                    <td><input type="text" size="50" id="name" name="name"></td>
+                    <td><input type="text" size="50" id="name" value="<?php echo $name ?>" name="name"></td>
                     <th><label for="path">Path:</label></th>
                     <td><input type="text" size="50" id="path" name="path"> </input></td>
                     <th><label for="career">Career:</label></th>
@@ -404,6 +406,7 @@ try {
             </table>
         </div>
     </div>
+</div>
 </form>
 </body>
 </html>
